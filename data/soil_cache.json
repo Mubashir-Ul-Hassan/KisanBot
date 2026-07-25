@@ -1,0 +1,5 @@
+{
+  "_README": "Pre-fetched ISRIC SoilGrids data per supported region. EMPTY on first checkout — populate it by running: python scripts/prefetch_soil.py . SoilGrids must NOT be called live per farmer request (it is beta and rate-limited ~5/min, spec Section 4.3), so until this cache is filled the Crop Recommendation agent will honestly say soil data is unavailable rather than invent it.",
+  "generated_at": null,
+  "points": []
+}

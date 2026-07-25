@@ -1,0 +1,484 @@
+{
+  "seasons": {
+    "rabi": {
+      "name_en": "Rabi (Winter)",
+      "name_ur": "ربیع (سردیوں کی فصل)",
+      "sowing_months": [10, 11, 12],
+      "harvest_months": [3, 4, 5],
+      "description_en": "Winter crops sown in October-December and harvested in March-May",
+      "description_ur": "سردیوں کی فصلیں جو اکتوبر سے دسمبر میں بوئی جاتی ہیں اور مارچ سے مئی میں کاٹی جاتی ہیں"
+    },
+    "kharif": {
+      "name_en": "Kharif (Summer/Monsoon)",
+      "name_ur": "خریف (گرمیوں/مانسون کی فصل)",
+      "sowing_months": [5, 6, 7],
+      "harvest_months": [9, 10, 11],
+      "description_en": "Summer crops sown in May-July and harvested in September-November",
+      "description_ur": "گرمیوں کی فصلیں جو مئی سے جولائی میں بوئی جاتی ہیں اور ستمبر سے نومبر میں کاٹی جاتی ہیں"
+    },
+    "zaid": {
+      "name_en": "Zaid (Spring)",
+      "name_ur": "زائد (بہار کی فصل)",
+      "sowing_months": [2, 3],
+      "harvest_months": [6, 7],
+      "description_en": "Spring crops sown in February-March and harvested in June-July",
+      "description_ur": "بہار کی فصلیں جو فروری مارچ میں بوئی جاتی ہیں اور جون جولائی میں کاٹی جاتی ہیں"
+    }
+  },
+  "crops": {
+    "wheat": {
+      "name_en": "Wheat",
+      "name_ur": "گندم",
+      "season": "rabi",
+      "sowing_window": {"start_month": 10, "end_month": 12, "optimal_month": 11},
+      "harvest_window": {"start_month": 3, "end_month": 5, "optimal_month": 4},
+      "duration_days": 150,
+      "provinces": ["punjab", "sindh", "kpk", "balochistan"],
+      "suitable_soil": ["alluvial", "alluvial_loam", "alluvial_clay_loam", "alluvial_sandy_loam", "loess_clay", "mountain_loam"],
+      "water_requirement_mm": 450,
+      "irrigation_count": 5,
+      "temp_range": {"min": 10, "max": 25, "optimal": 18},
+      "seed_rate_kg_per_acre": 50,
+      "expected_yield_maund_per_acre": {"low": 25, "medium": 35, "high": 50},
+      "varieties": {
+        "punjab": ["Galaxy-2013", "Akbar-2019", "Fakhr-e-Bhakkar", "Zincol-2016", "Johar-2016"],
+        "sindh": ["Benazir-2013", "NIA-Sunhari", "TD-1", "Kiran-95"],
+        "kpk": ["Pirsabak-2013", "Pirsabak-2015", "Shahkar-2013"],
+        "balochistan": ["Zardana", "Sariab-2013", "Balochistan-2020"]
+      },
+      "key_notes_en": "Most important cereal crop of Pakistan. Best sown after mid-November for optimal yield. Avoid late sowing after December 15.",
+      "key_notes_ur": "پاکستان کی سب سے اہم اناج کی فصل۔ بہترین پیداوار کے لیے نومبر کے وسط کے بعد بوائی کریں۔ 15 دسمبر کے بعد دیر سے بوائی سے بچیں۔"
+    },
+    "rice": {
+      "name_en": "Rice",
+      "name_ur": "چاول",
+      "season": "kharif",
+      "sowing_window": {"start_month": 5, "end_month": 7, "optimal_month": 6},
+      "harvest_window": {"start_month": 9, "end_month": 11, "optimal_month": 10},
+      "duration_days": 130,
+      "provinces": ["punjab", "sindh", "kpk", "balochistan"],
+      "suitable_soil": ["alluvial_clay", "alluvial_clay_loam", "alluvial_silt", "alluvial_loam"],
+      "water_requirement_mm": 1200,
+      "irrigation_count": 20,
+      "temp_range": {"min": 20, "max": 38, "optimal": 30},
+      "seed_rate_kg_per_acre": 8,
+      "expected_yield_maund_per_acre": {"low": 30, "medium": 45, "high": 70},
+      "varieties": {
+        "punjab": ["Super Basmati", "Basmati-515", "PK-386", "Kainat", "Kissan Basmati"],
+        "sindh": ["IRRI-6", "IRRI-9", "Shandar", "Sarshar"],
+        "kpk": ["Fakhre Malakand", "JP-5", "Basmati-385"],
+        "balochistan": ["IRRI-6", "Basmati-370"]
+      },
+      "key_notes_en": "Nursery is prepared 30 days before transplanting. Basmati varieties for upper Punjab, IRRI for Sindh. Requires standing water.",
+      "key_notes_ur": "نرسری ٹرانسپلانٹنگ سے 30 دن پہلے تیار کی جاتی ہے۔ اوپری پنجاب کے لیے باسمتی اور سندھ کے لیے IRRI اقسام۔ کھڑے پانی کی ضرورت ہے۔"
+    },
+    "cotton": {
+      "name_en": "Cotton",
+      "name_ur": "کپاس",
+      "season": "kharif",
+      "sowing_window": {"start_month": 4, "end_month": 6, "optimal_month": 5},
+      "harvest_window": {"start_month": 9, "end_month": 12, "optimal_month": 10},
+      "duration_days": 180,
+      "provinces": ["punjab", "sindh"],
+      "suitable_soil": ["alluvial_loam", "alluvial_sandy_loam", "alluvial_clay_loam", "sandy_loam"],
+      "water_requirement_mm": 700,
+      "irrigation_count": 8,
+      "temp_range": {"min": 20, "max": 40, "optimal": 32},
+      "seed_rate_kg_per_acre": 8,
+      "expected_yield_maund_per_acre": {"low": 8, "medium": 15, "high": 25},
+      "varieties": {
+        "punjab": ["FH-142", "IUB-13", "MNH-886", "NIAB-878", "FH-Lalazar"],
+        "sindh": ["CRIS-342", "CRIS-510", "Sadori", "Sindh-1"]
+      },
+      "key_notes_en": "Major cash crop. Highly susceptible to cotton leaf curl virus (CLCuV). Use BT varieties for bollworm resistance. Avoid waterlogging.",
+      "key_notes_ur": "اہم نقدی فصل۔ کاٹن لیف کرل وائرس (CLCuV) سے بہت متاثر ہوتی ہے۔ بولورم ریزسٹنس کے لیے BT اقسام استعمال کریں۔ پانی کا جمنا نقصان دہ ہے۔"
+    },
+    "sugarcane": {
+      "name_en": "Sugarcane",
+      "name_ur": "گنا",
+      "season": "kharif",
+      "sowing_window": {"start_month": 2, "end_month": 4, "optimal_month": 3},
+      "harvest_window": {"start_month": 11, "end_month": 3, "optimal_month": 1},
+      "duration_days": 330,
+      "provinces": ["punjab", "sindh", "kpk"],
+      "suitable_soil": ["alluvial_loam", "alluvial_clay_loam", "alluvial_clay", "alluvial_sandy_loam"],
+      "water_requirement_mm": 2000,
+      "irrigation_count": 25,
+      "temp_range": {"min": 15, "max": 40, "optimal": 30},
+      "seed_rate_kg_per_acre": 3200,
+      "expected_yield_maund_per_acre": {"low": 400, "medium": 600, "high": 1000},
+      "varieties": {
+        "punjab": ["CPF-249", "CPF-254", "HSF-240", "SPF-245"],
+        "sindh": ["Thatta-10", "BL-4", "NIA-2004"],
+        "kpk": ["CP-77/400", "Mardan-93"]
+      },
+      "key_notes_en": "Annual crop spanning 10-12 months. Spring planting (Feb-Mar) gives better yield than autumn (Sep-Oct). Ratoon crop possible but lower yield.",
+      "key_notes_ur": "10-12 ماہ کی فصل۔ بہار کی بوائی (فروری-مارچ) خزاں (ستمبر-اکتوبر) سے بہتر پیداوار دیتی ہے۔ رٹون فصل ممکن لیکن کم پیداوار۔"
+    },
+    "maize": {
+      "name_en": "Maize/Corn",
+      "name_ur": "مکئی",
+      "season": "kharif",
+      "sowing_window": {"start_month": 6, "end_month": 8, "optimal_month": 7},
+      "harvest_window": {"start_month": 9, "end_month": 11, "optimal_month": 10},
+      "duration_days": 100,
+      "provinces": ["punjab", "kpk"],
+      "suitable_soil": ["alluvial_loam", "alluvial_clay_loam", "mountain_loam", "mountain_clay_loam"],
+      "water_requirement_mm": 500,
+      "irrigation_count": 6,
+      "temp_range": {"min": 15, "max": 35, "optimal": 27},
+      "seed_rate_kg_per_acre": 10,
+      "expected_yield_maund_per_acre": {"low": 20, "medium": 40, "high": 65},
+      "varieties": {
+        "punjab": ["Pioneer-33M15", "DK-6714", "FH-985", "YH-5507"],
+        "kpk": ["Azam", "Jalal", "PARC-SH"]
+      },
+      "key_notes_en": "Spring maize (Feb-Mar) increasingly popular. Hybrid varieties give 2-3x yield of open-pollinated. Important for poultry feed industry.",
+      "key_notes_ur": "بہار کی مکئی (فروری-مارچ) تیزی سے مقبول ہو رہی ہے۔ ہائبرڈ اقسام اوپن پولینیٹڈ سے 2-3 گنا زیادہ پیداوار دیتی ہیں۔ پولٹری فیڈ انڈسٹری کے لیے اہم۔"
+    },
+    "gram": {
+      "name_en": "Chickpea/Gram",
+      "name_ur": "چنا",
+      "season": "rabi",
+      "sowing_window": {"start_month": 10, "end_month": 11, "optimal_month": 10},
+      "harvest_window": {"start_month": 3, "end_month": 4, "optimal_month": 4},
+      "duration_days": 150,
+      "provinces": ["punjab", "kpk", "balochistan"],
+      "suitable_soil": ["alluvial_loam", "loess_clay", "alluvial_sandy_loam", "mountain_sandy_loam"],
+      "water_requirement_mm": 250,
+      "irrigation_count": 2,
+      "temp_range": {"min": 5, "max": 25, "optimal": 18},
+      "seed_rate_kg_per_acre": 30,
+      "expected_yield_maund_per_acre": {"low": 5, "medium": 10, "high": 18},
+      "varieties": {
+        "punjab": ["Thal-2006", "Bittle-2016", "Noor-2013", "Punjab-2008"],
+        "kpk": ["NIFA-2005", "Karak-III"],
+        "balochistan": ["Noor-91", "Zhob-2020"]
+      },
+      "key_notes_en": "Drought-tolerant. Major pulse crop. Grown mainly in Thal area (Punjab) and rainfed regions. Good for soil nitrogen fixation.",
+      "key_notes_ur": "خشک سالی سے مزاحم۔ اہم دال کی فصل۔ بنیادی طور پر تھل ایریا (پنجاب) اور بارانی علاقوں میں کاشت ہوتی ہے۔ مٹی میں نائٹروجن فکسیشن کے لیے مفید۔"
+    },
+    "mustard": {
+      "name_en": "Mustard/Rapeseed",
+      "name_ur": "سرسوں",
+      "season": "rabi",
+      "sowing_window": {"start_month": 10, "end_month": 11, "optimal_month": 10},
+      "harvest_window": {"start_month": 2, "end_month": 4, "optimal_month": 3},
+      "duration_days": 130,
+      "provinces": ["punjab", "sindh", "kpk"],
+      "suitable_soil": ["alluvial_loam", "alluvial_sandy_loam", "alluvial_clay_loam"],
+      "water_requirement_mm": 300,
+      "irrigation_count": 3,
+      "temp_range": {"min": 5, "max": 25, "optimal": 15},
+      "seed_rate_kg_per_acre": 2,
+      "expected_yield_maund_per_acre": {"low": 5, "medium": 8, "high": 15},
+      "varieties": {
+        "punjab": ["Faisal Canola", "Super Raya", "Canola Hyola-401"],
+        "sindh": ["S-9", "P-Raya"],
+        "kpk": ["NIFA-Gold"]
+      },
+      "key_notes_en": "Important oilseed crop. Canola varieties have higher oil content (42%) vs traditional raya (35%). Good intercrop with wheat.",
+      "key_notes_ur": "اہم تیلی بیج کی فصل۔ کینولا اقسام میں روایتی رائے (35%) کے مقابلے زیادہ تیل (42%) ہوتا ہے۔ گندم کے ساتھ بین فصلی کاشت کے لیے مفید۔"
+    },
+    "sunflower": {
+      "name_en": "Sunflower",
+      "name_ur": "سورج مکھی",
+      "season": "zaid",
+      "sowing_window": {"start_month": 2, "end_month": 3, "optimal_month": 2},
+      "harvest_window": {"start_month": 5, "end_month": 7, "optimal_month": 6},
+      "duration_days": 110,
+      "provinces": ["punjab", "sindh"],
+      "suitable_soil": ["alluvial_loam", "alluvial_sandy_loam", "alluvial_clay"],
+      "water_requirement_mm": 400,
+      "irrigation_count": 5,
+      "temp_range": {"min": 15, "max": 35, "optimal": 25},
+      "seed_rate_kg_per_acre": 3,
+      "expected_yield_maund_per_acre": {"low": 6, "medium": 10, "high": 18},
+      "varieties": {
+        "punjab": ["Hysun-33", "S-278", "FH-331", "NK-Armoni"],
+        "sindh": ["HO-1", "S-278"]
+      },
+      "key_notes_en": "Good cash crop for spring season. Fits between rabi and kharif crops. Bee pollination increases yield by 20-30%.",
+      "key_notes_ur": "بہار کے موسم کی اچھی نقدی فصل۔ ربیع اور خریف فصلوں کے درمیان فٹ ہوتی ہے۔ شہد کی مکھی کی پولینیشن سے پیداوار 20-30% بڑھتی ہے۔"
+    },
+    "millet": {
+      "name_en": "Pearl Millet/Bajra",
+      "name_ur": "باجرہ",
+      "season": "kharif",
+      "sowing_window": {"start_month": 6, "end_month": 7, "optimal_month": 7},
+      "harvest_window": {"start_month": 9, "end_month": 10, "optimal_month": 10},
+      "duration_days": 90,
+      "provinces": ["punjab", "sindh", "balochistan"],
+      "suitable_soil": ["sandy_loam", "alluvial_sandy", "alluvial_sandy_loam", "sandy_coastal"],
+      "water_requirement_mm": 250,
+      "irrigation_count": 2,
+      "temp_range": {"min": 20, "max": 42, "optimal": 32},
+      "seed_rate_kg_per_acre": 3,
+      "expected_yield_maund_per_acre": {"low": 5, "medium": 10, "high": 18},
+      "varieties": {
+        "punjab": ["PARC-M-3", "MB-87"],
+        "sindh": ["Sindh Bajra-1"],
+        "balochistan": ["Local varieties"]
+      },
+      "key_notes_en": "Extremely drought-tolerant. Ideal for sandy/arid regions like Tharparkar and Cholistan. Dual purpose: grain and fodder.",
+      "key_notes_ur": "انتہائی خشک سالی سے مزاحم۔ تھرپارکر اور چولستان جیسے ریتلے/خشک علاقوں کے لیے مثالی۔ دوہرا مقصد: اناج اور چارہ۔"
+    },
+    "barley": {
+      "name_en": "Barley",
+      "name_ur": "جو",
+      "season": "rabi",
+      "sowing_window": {"start_month": 10, "end_month": 11, "optimal_month": 11},
+      "harvest_window": {"start_month": 3, "end_month": 4, "optimal_month": 4},
+      "duration_days": 130,
+      "provinces": ["balochistan", "kpk", "punjab"],
+      "suitable_soil": ["mountain_sandy_loam", "mountain_rocky_loam", "loess_clay", "alluvial_sandy_loam"],
+      "water_requirement_mm": 300,
+      "irrigation_count": 3,
+      "temp_range": {"min": 5, "max": 22, "optimal": 15},
+      "seed_rate_kg_per_acre": 40,
+      "expected_yield_maund_per_acre": {"low": 10, "medium": 18, "high": 30},
+      "varieties": {
+        "balochistan": ["Jau-2017", "Sariab-2020"],
+        "kpk": ["Frontier-2013"],
+        "punjab": ["Sultan-2017", "Haider-93"]
+      },
+      "key_notes_en": "Salt and drought tolerant. Preferred in Balochistan highlands. Used for animal feed and food. Matures earlier than wheat.",
+      "key_notes_ur": "نمکیات اور خشک سالی سے مزاحم۔ بلوچستان کے بلند علاقوں میں ترجیح۔ جانوروں کی خوراک اور انسانی خوراک کے لیے۔ گندم سے پہلے پکتی ہے۔"
+    },
+    "potato": {
+      "name_en": "Potato",
+      "name_ur": "آلو",
+      "season": "rabi",
+      "sowing_window": {"start_month": 10, "end_month": 1, "optimal_month": 11},
+      "harvest_window": {"start_month": 1, "end_month": 3, "optimal_month": 2},
+      "duration_days": 90,
+      "provinces": ["punjab", "kpk", "balochistan"],
+      "suitable_soil": ["alluvial_loam", "alluvial_sandy_loam", "mountain_loam"],
+      "water_requirement_mm": 450,
+      "irrigation_count": 8,
+      "temp_range": {"min": 10, "max": 25, "optimal": 18},
+      "seed_rate_kg_per_acre": 800,
+      "expected_yield_maund_per_acre": {"low": 80, "medium": 150, "high": 250},
+      "varieties": {
+        "punjab": ["Desiree", "Diamont", "Cardinal", "Kuroda"],
+        "kpk": ["Desiree", "SH-5"],
+        "balochistan": ["Desiree", "FD 35-36"]
+      },
+      "key_notes_en": "High value vegetable crop. Okara, Sahiwal, and Chiniot are major growing areas. Cold storage needed. Spring crop possible in Feb-Mar.",
+      "key_notes_ur": "زیادہ قیمت والی سبزیوں کی فصل۔ اوکاڑہ، ساہیوال اور چنیوٹ بڑے پیداواری علاقے ہیں۔ کولڈ سٹوریج ضروری ہے۔ بہار کی فصل فروری-مارچ میں ممکن۔"
+    },
+    "onion": {
+      "name_en": "Onion",
+      "name_ur": "پیاز",
+      "season": "rabi",
+      "sowing_window": {"start_month": 10, "end_month": 12, "optimal_month": 11},
+      "harvest_window": {"start_month": 3, "end_month": 5, "optimal_month": 4},
+      "duration_days": 150,
+      "provinces": ["sindh", "balochistan", "punjab"],
+      "suitable_soil": ["alluvial_loam", "alluvial_silt", "mountain_rocky_loam", "alluvial_sandy_loam"],
+      "water_requirement_mm": 400,
+      "irrigation_count": 10,
+      "temp_range": {"min": 10, "max": 28, "optimal": 20},
+      "seed_rate_kg_per_acre": 4,
+      "expected_yield_maund_per_acre": {"low": 60, "medium": 120, "high": 200},
+      "varieties": {
+        "sindh": ["Phulkara", "Desi Red"],
+        "balochistan": ["Mastung Red", "Kalat Red"],
+        "punjab": ["Swat-1", "Faisalabad Early"]
+      },
+      "key_notes_en": "Sindh (Hyderabad, Mirpurkhas) is largest producer. Balochistan highlands produce high-quality onions. Proper curing essential for storage.",
+      "key_notes_ur": "سندھ (حیدرآباد، میرپور خاص) سب سے بڑا پیداوار کار ہے۔ بلوچستان کے بلند علاقے اعلیٰ معیار کے پیاز پیدا کرتے ہیں۔ ذخیرہ کے لیے مناسب خشک کرنا ضروری۔"
+    },
+    "tomato": {
+      "name_en": "Tomato",
+      "name_ur": "ٹماٹر",
+      "season": "rabi",
+      "sowing_window": {"start_month": 9, "end_month": 11, "optimal_month": 10},
+      "harvest_window": {"start_month": 12, "end_month": 4, "optimal_month": 2},
+      "duration_days": 120,
+      "provinces": ["sindh", "balochistan", "punjab", "kpk"],
+      "suitable_soil": ["alluvial_loam", "alluvial_sandy_loam", "mountain_loam"],
+      "water_requirement_mm": 500,
+      "irrigation_count": 12,
+      "temp_range": {"min": 15, "max": 30, "optimal": 22},
+      "seed_rate_kg_per_acre": 0.2,
+      "expected_yield_maund_per_acre": {"low": 100, "medium": 200, "high": 350},
+      "varieties": {
+        "sindh": ["Roma", "Advanta-1206"],
+        "balochistan": ["Rio Grande", "Sahil"],
+        "punjab": ["Nagina", "Roma"],
+        "kpk": ["Rio Grande", "Roma"]
+      },
+      "key_notes_en": "High profit potential but perishable. Tunnel farming (plastic tunnel) extends growing season. Sindh produces winter crop, KP/Balochistan summer crop.",
+      "key_notes_ur": "زیادہ منافع کی صلاحیت لیکن جلد خراب ہونے والی۔ ٹنل فارمنگ (پلاسٹک ٹنل) موسم کو بڑھاتی ہے۔ سندھ سردیوں کی فصل، KP/بلوچستان گرمیوں کی فصل پیدا کرتا ہے۔"
+    },
+    "mango": {
+      "name_en": "Mango",
+      "name_ur": "آم",
+      "season": "kharif",
+      "sowing_window": {"start_month": 8, "end_month": 9, "optimal_month": 8},
+      "harvest_window": {"start_month": 5, "end_month": 8, "optimal_month": 7},
+      "duration_days": 0,
+      "provinces": ["sindh", "punjab"],
+      "suitable_soil": ["alluvial_loam", "alluvial_sandy_loam", "alluvial_silt"],
+      "water_requirement_mm": 1000,
+      "irrigation_count": 15,
+      "temp_range": {"min": 15, "max": 45, "optimal": 30},
+      "seed_rate_kg_per_acre": 0,
+      "expected_yield_maund_per_acre": {"low": 80, "medium": 150, "high": 300},
+      "varieties": {
+        "sindh": ["Sindhri", "Chaunsa", "Langra", "Dusheri", "Anwar Ratol"],
+        "punjab": ["Chaunsa", "Anwar Ratol", "Langra", "Dusheri", "Fajri"]
+      },
+      "key_notes_en": "Perennial fruit tree. Takes 5-6 years to bear fruit. Sindh (Mirpurkhas, Hyderabad) and Punjab (Multan, Rahim Yar Khan) are major areas. Export quality fruit.",
+      "key_notes_ur": "کئی سالوں والا پھل کا درخت۔ پھل دینے میں 5-6 سال لگتے ہیں۔ سندھ (میرپور خاص، حیدرآباد) اور پنجاب (ملتان، رحیم یار خان) بڑے علاقے ہیں۔ ایکسپورٹ کوالٹی پھل۔"
+    },
+    "citrus": {
+      "name_en": "Citrus (Kinnow)",
+      "name_ur": "کینو",
+      "season": "rabi",
+      "sowing_window": {"start_month": 2, "end_month": 3, "optimal_month": 2},
+      "harvest_window": {"start_month": 12, "end_month": 3, "optimal_month": 1},
+      "duration_days": 0,
+      "provinces": ["punjab"],
+      "suitable_soil": ["alluvial_loam", "alluvial_sandy_loam"],
+      "water_requirement_mm": 900,
+      "irrigation_count": 18,
+      "temp_range": {"min": 10, "max": 35, "optimal": 25},
+      "seed_rate_kg_per_acre": 0,
+      "expected_yield_maund_per_acre": {"low": 200, "medium": 400, "high": 600},
+      "varieties": {
+        "punjab": ["Kinnow Mandarin", "Feutrell Early", "Musambi", "Malta"]
+      },
+      "key_notes_en": "Sargodha is the Kinnow capital of Pakistan. Perennial orchard crop. Peak harvest Dec-Feb. Major export crop earning foreign exchange.",
+      "key_notes_ur": "سرگودھا پاکستان کا کینو کیپٹل ہے۔ کئی سالوں والی باغات کی فصل۔ دسمبر-فروری چوٹی کی کٹائی۔ غیر ملکی زرمبادلہ کمانے والی بڑی برآمدی فصل۔"
+    },
+    "dates": {
+      "name_en": "Dates",
+      "name_ur": "کھجور",
+      "season": "kharif",
+      "sowing_window": {"start_month": 2, "end_month": 4, "optimal_month": 3},
+      "harvest_window": {"start_month": 6, "end_month": 10, "optimal_month": 8},
+      "duration_days": 0,
+      "provinces": ["sindh", "balochistan", "punjab"],
+      "suitable_soil": ["sandy_loam", "alluvial_sandy", "sandy_coastal", "alluvial_silt"],
+      "water_requirement_mm": 600,
+      "irrigation_count": 10,
+      "temp_range": {"min": 15, "max": 50, "optimal": 35},
+      "seed_rate_kg_per_acre": 0,
+      "expected_yield_maund_per_acre": {"low": 40, "medium": 80, "high": 150},
+      "varieties": {
+        "sindh": ["Aseel", "Karbalain", "Fasli"],
+        "balochistan": ["Begum Jangi", "Mozawati", "Halini", "Sabzo"],
+        "punjab": ["Dhakki", "Hillawi"]
+      },
+      "key_notes_en": "Khairpur (Sindh) and Turbat (Balochistan) are major date-producing regions. Drought tolerant. 4-5 years to first harvest from offshoot.",
+      "key_notes_ur": "خیرپور (سندھ) اور تربت (بلوچستان) بڑے کھجور پیداوار والے علاقے ہیں۔ خشک سالی سے مزاحم۔ آف شوٹ سے پہلی فصل تک 4-5 سال لگتے ہیں۔"
+    },
+    "groundnut": {
+      "name_en": "Groundnut/Peanut",
+      "name_ur": "مونگ پھلی",
+      "season": "kharif",
+      "sowing_window": {"start_month": 4, "end_month": 6, "optimal_month": 5},
+      "harvest_window": {"start_month": 9, "end_month": 11, "optimal_month": 10},
+      "duration_days": 150,
+      "provinces": ["punjab"],
+      "suitable_soil": ["loess_clay", "alluvial_sandy_loam", "sandy_loam"],
+      "water_requirement_mm": 400,
+      "irrigation_count": 4,
+      "temp_range": {"min": 18, "max": 35, "optimal": 28},
+      "seed_rate_kg_per_acre": 40,
+      "expected_yield_maund_per_acre": {"low": 8, "medium": 15, "high": 25},
+      "varieties": {
+        "punjab": ["BARI-2011", "BARD-479", "Golden"]
+      },
+      "key_notes_en": "Mainly grown in Pothwar/Barani areas (Chakwal, Attock). Sandy loam soil ideal. Good nitrogen fixer for crop rotation.",
+      "key_notes_ur": "بنیادی طور پر پوٹھوار/بارانی علاقوں (چکوال، اٹک) میں کاشت ہوتی ہے۔ ریتلی لوم مٹی مثالی ہے۔ فصلی گردش کے لیے اچھا نائٹروجن فکسر۔"
+    },
+    "lentil": {
+      "name_en": "Lentil (Masoor)",
+      "name_ur": "مسور",
+      "season": "rabi",
+      "sowing_window": {"start_month": 10, "end_month": 11, "optimal_month": 10},
+      "harvest_window": {"start_month": 3, "end_month": 4, "optimal_month": 4},
+      "duration_days": 140,
+      "provinces": ["punjab", "kpk"],
+      "suitable_soil": ["alluvial_loam", "alluvial_clay_loam", "loess_clay"],
+      "water_requirement_mm": 250,
+      "irrigation_count": 2,
+      "temp_range": {"min": 5, "max": 25, "optimal": 18},
+      "seed_rate_kg_per_acre": 15,
+      "expected_yield_maund_per_acre": {"low": 4, "medium": 8, "high": 14},
+      "varieties": {
+        "punjab": ["Masoor-2006", "Punjab Masoor-2009", "NIAB Masoor-2006"],
+        "kpk": ["Markaz-2009"]
+      },
+      "key_notes_en": "Staple pulse in Pakistani diet. Low water requirement makes it suitable for rainfed areas. Good legume for crop rotation with wheat.",
+      "key_notes_ur": "پاکستانی غذا میں اہم دال۔ کم پانی کی ضرورت بارانی علاقوں کے لیے موزوں بناتی ہے۔ گندم کے ساتھ فصلی گردش کے لیے اچھی دلہن فصل۔"
+    },
+    "mungbean": {
+      "name_en": "Mung Bean",
+      "name_ur": "مونگ",
+      "season": "kharif",
+      "sowing_window": {"start_month": 3, "end_month": 7, "optimal_month": 4},
+      "harvest_window": {"start_month": 6, "end_month": 9, "optimal_month": 7},
+      "duration_days": 75,
+      "provinces": ["punjab", "sindh"],
+      "suitable_soil": ["alluvial_loam", "alluvial_sandy_loam", "sandy_loam"],
+      "water_requirement_mm": 250,
+      "irrigation_count": 3,
+      "temp_range": {"min": 20, "max": 38, "optimal": 28},
+      "seed_rate_kg_per_acre": 8,
+      "expected_yield_maund_per_acre": {"low": 4, "medium": 7, "high": 12},
+      "varieties": {
+        "punjab": ["AZRI Mung-2006", "NM-2011", "NM-2016"],
+        "sindh": ["NM-92", "NM-54"]
+      },
+      "key_notes_en": "Short duration crop — fits well between wheat harvest and kharif sowing. Excellent nitrogen fixer. High protein content (24%).",
+      "key_notes_ur": "مختصر مدت کی فصل — گندم کی کٹائی اور خریف بوائی کے درمیان اچھی طرح فٹ ہوتی ہے۔ بہترین نائٹروجن فکسر۔ زیادہ پروٹین (24%)۔"
+    },
+    "sesame": {
+      "name_en": "Sesame (Til)",
+      "name_ur": "تل",
+      "season": "kharif",
+      "sowing_window": {"start_month": 6, "end_month": 7, "optimal_month": 7},
+      "harvest_window": {"start_month": 10, "end_month": 11, "optimal_month": 10},
+      "duration_days": 100,
+      "provinces": ["punjab", "sindh"],
+      "suitable_soil": ["alluvial_sandy_loam", "sandy_loam", "alluvial_loam"],
+      "water_requirement_mm": 300,
+      "irrigation_count": 3,
+      "temp_range": {"min": 20, "max": 40, "optimal": 30},
+      "seed_rate_kg_per_acre": 2,
+      "expected_yield_maund_per_acre": {"low": 3, "medium": 5, "high": 9},
+      "varieties": {
+        "punjab": ["TS-3", "TH-6", "SG-30"],
+        "sindh": ["TS-5"]
+      },
+      "key_notes_en": "Heat and drought tolerant oilseed crop. Good for marginal lands. Oil content 46-52%. Growing demand for organic sesame export.",
+      "key_notes_ur": "گرمی اور خشک سالی سے مزاحم تیلی بیج کی فصل۔ حاشیائی زمینوں کے لیے مفید۔ تیل 46-52%۔ نامیاتی تل کی برآمد کی بڑھتی مانگ۔"
+    },
+    "sorghum": {
+      "name_en": "Sorghum (Jowar)",
+      "name_ur": "جوار",
+      "season": "kharif",
+      "sowing_window": {"start_month": 6, "end_month": 8, "optimal_month": 7},
+      "harvest_window": {"start_month": 10, "end_month": 11, "optimal_month": 10},
+      "duration_days": 110,
+      "provinces": ["punjab", "sindh", "balochistan"],
+      "suitable_soil": ["alluvial_sandy_loam", "sandy_loam", "alluvial_sandy", "alluvial_loam"],
+      "water_requirement_mm": 350,
+      "irrigation_count": 3,
+      "temp_range": {"min": 20, "max": 42, "optimal": 32},
+      "seed_rate_kg_per_acre": 6,
+      "expected_yield_maund_per_acre": {"low": 6, "medium": 12, "high": 20},
+      "varieties": {
+        "punjab": ["JS-263", "Hegari"],
+        "sindh": ["Milo-84"],
+        "balochistan": ["Local"]
+      },
+      "key_notes_en": "Drought-tolerant grain and fodder crop. Dual purpose: grain for food and stalk for animal feed. Good for arid/semi-arid zones.",
+      "key_notes_ur": "خشک سالی سے مزاحم اناج اور چارے کی فصل۔ دوہرا مقصد: خوراک کے لیے اناج اور جانوروں کی خوراک کے لیے ڈنٹھل۔ خشک/نیم خشک زونز کے لیے مفید۔"
+    }
+  }
+}

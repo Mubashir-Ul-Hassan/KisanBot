@@ -1,0 +1,259 @@
+{
+  "fertilizers": {
+    "urea": {
+      "name_en": "Urea",
+      "name_ur": "یوریا",
+      "nutrient": "N",
+      "content_percent": 46,
+      "type": "nitrogen",
+      "price_range_pkr_per_bag": {"min": 1800, "max": 2500},
+      "bag_weight_kg": 50,
+      "description_en": "Most common nitrogen fertilizer. Apply in split doses. Avoid applying before heavy rain.",
+      "description_ur": "سب سے عام نائٹروجن کھاد۔ قسطوں میں لگائیں۔ بھاری بارش سے پہلے لگانے سے بچیں۔"
+    },
+    "dap": {
+      "name_en": "DAP (Di-Ammonium Phosphate)",
+      "name_ur": "ڈی اے پی",
+      "nutrient": "NP",
+      "content_percent": {"N": 18, "P": 46},
+      "type": "phosphorus",
+      "price_range_pkr_per_bag": {"min": 7000, "max": 13000},
+      "bag_weight_kg": 50,
+      "description_en": "Primary phosphorus source. Apply at sowing time. Essential for root development.",
+      "description_ur": "فاسفورس کا بنیادی ذریعہ۔ بوائی کے وقت لگائیں۔ جڑوں کی نشوونما کے لیے ضروری۔"
+    },
+    "ssp": {
+      "name_en": "SSP (Single Super Phosphate)",
+      "name_ur": "ایس ایس پی",
+      "nutrient": "PS",
+      "content_percent": {"P": 18, "S": 12},
+      "type": "phosphorus_sulfur",
+      "price_range_pkr_per_bag": {"min": 1500, "max": 2500},
+      "bag_weight_kg": 50,
+      "description_en": "Cheaper phosphorus option. Also provides sulfur. Good for oilseed crops.",
+      "description_ur": "سستا فاسفورس آپشن۔ سلفر بھی فراہم کرتا ہے۔ تیلی بیج فصلوں کے لیے اچھا۔"
+    },
+    "potash": {
+      "name_en": "SOP/MOP (Potash)",
+      "name_ur": "پوٹاش",
+      "nutrient": "K",
+      "content_percent": 60,
+      "type": "potassium",
+      "price_range_pkr_per_bag": {"min": 5000, "max": 8000},
+      "bag_weight_kg": 50,
+      "description_en": "Potassium fertilizer. Often neglected but important for crop quality and disease resistance.",
+      "description_ur": "پوٹاشیم کھاد۔ اکثر نظرانداز کی جاتی ہے لیکن فصل کے معیار اور بیماری کی مزاحمت کے لیے اہم۔"
+    },
+    "zinc_sulphate": {
+      "name_en": "Zinc Sulphate",
+      "name_ur": "زنک سلفیٹ",
+      "nutrient": "Zn",
+      "content_percent": 33,
+      "type": "micronutrient",
+      "price_range_pkr_per_bag": {"min": 3000, "max": 5000},
+      "bag_weight_kg": 25,
+      "description_en": "Most deficient micronutrient in Pakistani soils. Essential for rice and wheat.",
+      "description_ur": "پاکستانی مٹی میں سب سے زیادہ کمی والا خرد غذائی عنصر۔ چاول اور گندم کے لیے ضروری۔"
+    },
+    "fym": {
+      "name_en": "Farmyard Manure (FYM)",
+      "name_ur": "گوبر کی کھاد",
+      "nutrient": "NPK+Organic",
+      "content_percent": {"N": 0.5, "P": 0.2, "K": 0.5},
+      "type": "organic",
+      "price_range_pkr_per_bag": {"min": 0, "max": 500},
+      "bag_weight_kg": 0,
+      "description_en": "Best organic amendment. Improves soil structure, water retention, and microbial activity. Apply well-decomposed only.",
+      "description_ur": "بہترین نامیاتی اصلاح۔ مٹی کی ساخت، پانی کی بچت اور جرثومی سرگرمی بہتر کرتی ہے۔ صرف اچھی طرح سڑی ہوئی لگائیں۔"
+    },
+    "gypsum": {
+      "name_en": "Gypsum",
+      "name_ur": "جپسم",
+      "nutrient": "CaS",
+      "content_percent": {"Ca": 23, "S": 18},
+      "type": "soil_amendment",
+      "price_range_pkr_per_bag": {"min": 400, "max": 800},
+      "bag_weight_kg": 50,
+      "description_en": "Essential for sodic/saline soil reclamation. Provides calcium and sulfur.",
+      "description_ur": "قلعی/نمکین مٹی کی اصلاح کے لیے ضروری۔ کیلشیم اور سلفر فراہم کرتا ہے۔"
+    }
+  },
+  "crop_plans": {
+    "wheat": {
+      "name_en": "Wheat Fertilizer Plan",
+      "name_ur": "گندم کھاد پلان",
+      "per_acre": {
+        "base_application": {
+          "timing_en": "At sowing / land preparation",
+          "timing_ur": "بوائی / زمین کی تیاری کے وقت",
+          "fertilizers": [
+            {"name": "DAP", "qty_bags": 1.5, "notes_en": "Mix in soil before sowing", "notes_ur": "بوائی سے پہلے مٹی میں ملائیں"},
+            {"name": "Urea", "qty_bags": 0.5, "notes_en": "First dose with DAP", "notes_ur": "پہلی قسط DAP کے ساتھ"},
+            {"name": "SOP", "qty_bags": 1, "notes_en": "Apply with DAP if potash-deficient soil", "notes_ur": "اگر مٹی میں پوٹاش کی کمی ہو تو DAP کے ساتھ لگائیں"},
+            {"name": "Zinc Sulphate", "qty_bags": 1, "notes_en": "If zinc-deficient soil (every 2-3 crops)", "notes_ur": "اگر مٹی میں زنک کی کمی ہو (ہر 2-3 فصلوں میں)"}
+          ]
+        },
+        "first_irrigation": {
+          "timing_en": "With first irrigation (20-25 days after sowing)",
+          "timing_ur": "پہلی آبپاشی کے ساتھ (بوائی کے 20-25 دن بعد)",
+          "fertilizers": [
+            {"name": "Urea", "qty_bags": 1, "notes_en": "Broadcast before irrigation", "notes_ur": "آبپاشی سے پہلے چھڑکیں"}
+          ]
+        },
+        "second_irrigation": {
+          "timing_en": "With second irrigation (45-50 days after sowing)",
+          "timing_ur": "دوسری آبپاشی کے ساتھ (بوائی کے 45-50 دن بعد)",
+          "fertilizers": [
+            {"name": "Urea", "qty_bags": 0.5, "notes_en": "Last nitrogen dose. Do not apply after booting stage.", "notes_ur": "آخری نائٹروجن قسط۔ بوٹنگ مرحلے کے بعد نہ لگائیں۔"}
+          ]
+        }
+      },
+      "total_per_acre": {"urea_bags": 2, "dap_bags": 1.5, "sop_bags": 1, "zinc_bags": 0.5}
+    },
+    "rice": {
+      "name_en": "Rice Fertilizer Plan",
+      "name_ur": "چاول کھاد پلان",
+      "per_acre": {
+        "base_application": {
+          "timing_en": "At puddling / before transplanting",
+          "timing_ur": "کدو کرتے وقت / قلم کاری سے پہلے",
+          "fertilizers": [
+            {"name": "DAP", "qty_bags": 1.5, "notes_en": "Incorporate into puddled field", "notes_ur": "کدو شدہ کھیت میں ملائیں"},
+            {"name": "SOP", "qty_bags": 1, "notes_en": "Mix with DAP", "notes_ur": "DAP کے ساتھ ملائیں"},
+            {"name": "Zinc Sulphate", "qty_bags": 2, "notes_en": "Critical for rice. Apply every crop.", "notes_ur": "چاول کے لیے بہت ضروری۔ ہر فصل میں لگائیں۔"}
+          ]
+        },
+        "tillering": {
+          "timing_en": "At active tillering (25-30 days after transplanting)",
+          "timing_ur": "کلے بنتے وقت (قلم کاری کے 25-30 دن بعد)",
+          "fertilizers": [
+            {"name": "Urea", "qty_bags": 1, "notes_en": "Apply in standing water", "notes_ur": "کھڑے پانی میں لگائیں"}
+          ]
+        },
+        "panicle_initiation": {
+          "timing_en": "At panicle initiation (55-60 days after transplanting)",
+          "timing_ur": "بالی بنتے وقت (قلم کاری کے 55-60 دن بعد)",
+          "fertilizers": [
+            {"name": "Urea", "qty_bags": 1, "notes_en": "Final dose for grain filling", "notes_ur": "دانے بھرنے کے لیے آخری قسط"}
+          ]
+        }
+      },
+      "total_per_acre": {"urea_bags": 2, "dap_bags": 1.5, "sop_bags": 1, "zinc_bags": 2}
+    },
+    "cotton": {
+      "name_en": "Cotton Fertilizer Plan",
+      "name_ur": "کپاس کھاد پلان",
+      "per_acre": {
+        "base_application": {
+          "timing_en": "At sowing / bed preparation",
+          "timing_ur": "بوائی / بیڈ تیاری کے وقت",
+          "fertilizers": [
+            {"name": "DAP", "qty_bags": 2, "notes_en": "Place in seed row", "notes_ur": "بیج کی قطار میں رکھیں"},
+            {"name": "SOP", "qty_bags": 1, "notes_en": "Essential for boll quality", "notes_ur": "ٹینڈے کے معیار کے لیے ضروری"}
+          ]
+        },
+        "first_irrigation": {
+          "timing_en": "With first irrigation (25-30 days after sowing)",
+          "timing_ur": "پہلی آبپاشی (بوائی کے 25-30 دن بعد)",
+          "fertilizers": [
+            {"name": "Urea", "qty_bags": 1, "notes_en": "First nitrogen dose", "notes_ur": "نائٹروجن کی پہلی قسط"}
+          ]
+        },
+        "flowering": {
+          "timing_en": "At flowering (60-70 days after sowing)",
+          "timing_ur": "پھول آنے پر (بوائی کے 60-70 دن بعد)",
+          "fertilizers": [
+            {"name": "Urea", "qty_bags": 1, "notes_en": "Second nitrogen dose", "notes_ur": "نائٹروجن کی دوسری قسط"}
+          ]
+        },
+        "boll_formation": {
+          "timing_en": "At boll formation (90-100 days after sowing)",
+          "timing_ur": "ٹینڈے بنتے وقت (بوائی کے 90-100 دن بعد)",
+          "fertilizers": [
+            {"name": "Urea", "qty_bags": 0.5, "notes_en": "Light dose for boll filling. Stop nitrogen after this.", "notes_ur": "ٹینڈے بھرنے کے لیے ہلکی قسط۔ اس کے بعد نائٹروجن بند کریں۔"}
+          ]
+        }
+      },
+      "total_per_acre": {"urea_bags": 2.5, "dap_bags": 2, "sop_bags": 1}
+    },
+    "sugarcane": {
+      "name_en": "Sugarcane Fertilizer Plan",
+      "name_ur": "گنا کھاد پلان",
+      "per_acre": {
+        "base_application": {
+          "timing_en": "At planting in furrows",
+          "timing_ur": "نالیوں میں بوائی کے وقت",
+          "fertilizers": [
+            {"name": "DAP", "qty_bags": 2, "notes_en": "Place in furrows with setts", "notes_ur": "ٹکڑوں کے ساتھ نالیوں میں رکھیں"},
+            {"name": "SOP", "qty_bags": 2, "notes_en": "For sugar quality", "notes_ur": "شکر کے معیار کے لیے"},
+            {"name": "FYM", "qty_tons": 5, "notes_en": "Apply well-decomposed FYM at land preparation", "notes_ur": "زمین کی تیاری میں اچھی طرح سڑی ہوئی گوبر کھاد لگائیں"}
+          ]
+        },
+        "first_earthing": {
+          "timing_en": "At first earthing up (60-75 days)",
+          "timing_ur": "پہلی مٹی چڑھاتے وقت (60-75 دن)",
+          "fertilizers": [
+            {"name": "Urea", "qty_bags": 1.5, "notes_en": "Apply and earth up immediately", "notes_ur": "لگائیں اور فوراً مٹی چڑھائیں"}
+          ]
+        },
+        "second_earthing": {
+          "timing_en": "At second earthing up (120-130 days)",
+          "timing_ur": "دوسری مٹی چڑھاتے وقت (120-130 دن)",
+          "fertilizers": [
+            {"name": "Urea", "qty_bags": 1.5, "notes_en": "Final nitrogen dose. No more urea after this.", "notes_ur": "آخری نائٹروجن قسط۔ اس کے بعد مزید یوریا نہیں۔"}
+          ]
+        }
+      },
+      "total_per_acre": {"urea_bags": 3, "dap_bags": 2, "sop_bags": 2, "fym_tons": 5}
+    },
+    "maize": {
+      "name_en": "Maize Fertilizer Plan",
+      "name_ur": "مکئی کھاد پلان",
+      "per_acre": {
+        "base_application": {
+          "timing_en": "At sowing",
+          "timing_ur": "بوائی کے وقت",
+          "fertilizers": [
+            {"name": "DAP", "qty_bags": 1.5, "notes_en": "Band placement with seed", "notes_ur": "بیج کے ساتھ بینڈ میں رکھیں"},
+            {"name": "SOP", "qty_bags": 1, "notes_en": "Mix with DAP", "notes_ur": "DAP کے ساتھ ملائیں"}
+          ]
+        },
+        "knee_height": {
+          "timing_en": "At knee height (30-35 days)",
+          "timing_ur": "گھٹنے کی اونچائی پر (30-35 دن)",
+          "fertilizers": [
+            {"name": "Urea", "qty_bags": 1.5, "notes_en": "Side dress and irrigate", "notes_ur": "سائیڈ ڈریسنگ کریں اور آبپاشی کریں"}
+          ]
+        },
+        "tasseling": {
+          "timing_en": "At tasseling (55-60 days)",
+          "timing_ur": "بھٹے نکلتے وقت (55-60 دن)",
+          "fertilizers": [
+            {"name": "Urea", "qty_bags": 1, "notes_en": "Final dose for grain filling", "notes_ur": "دانے بھرنے کے لیے آخری قسط"}
+          ]
+        }
+      },
+      "total_per_acre": {"urea_bags": 2.5, "dap_bags": 1.5, "sop_bags": 1}
+    }
+  },
+  "general_tips": {
+    "en": [
+      "Get soil tested before applying fertilizers — contact local Agriculture Extension office",
+      "Never apply urea on dry soil — always irrigate after application",
+      "DAP should be applied at sowing, not as top dressing",
+      "Split nitrogen (urea) application into 2-3 doses for better efficiency",
+      "Potash deficiency is widespread — don't skip SOP/MOP",
+      "Organic manure (FYM/compost) improves fertilizer efficiency by 20-30%",
+      "Zinc deficiency is very common in Pakistani soils — apply zinc sulphate especially for rice and wheat"
+    ],
+    "ur": [
+      "کھاد لگانے سے پہلے مٹی کا تجزیہ کروائیں — مقامی زراعت ایکسٹینشن آفس سے رابطہ کریں",
+      "خشک مٹی پر یوریا نہ لگائیں — لگانے کے بعد ہمیشہ آبپاشی کریں",
+      "DAP بوائی کے وقت لگائیں، ٹاپ ڈریسنگ کے طور پر نہیں",
+      "بہتر کارکردگی کے لیے نائٹروجن (یوریا) 2-3 قسطوں میں لگائیں",
+      "پوٹاش کی کمی بہت عام ہے — SOP/MOP نہ چھوڑیں",
+      "نامیاتی کھاد (FYM/کمپوسٹ) کھاد کی کارکردگی 20-30% بہتر کرتی ہے",
+      "پاکستانی مٹی میں زنک کی کمی بہت عام ہے — خاص طور پر چاول اور گندم کے لیے زنک سلفیٹ لگائیں"
+    ]
+  }
+}

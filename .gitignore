@@ -1,0 +1,36 @@
+# Secrets — never commit real keys
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Agents config (local)
+.agents/
+
+# Kaggle submission media (large files)
+kaggle_submission/media/*.mp4
+kaggle_submission/media/*.webm
+
+# Node
+node_modules/

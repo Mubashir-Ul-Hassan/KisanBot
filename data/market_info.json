@@ -1,0 +1,60 @@
+{
+  "prices": {
+    "wheat": {"name_en": "Wheat", "name_ur": "گندم", "unit": "maund (40kg)", "support_price_pkr": 4000, "market_range_pkr": {"min": 3800, "max": 5000}, "season": "rabi", "peak_price_months": [7, 8, 9]},
+    "rice_basmati": {"name_en": "Rice (Basmati)", "name_ur": "چاول (باسمتی)", "unit": "maund (40kg)", "support_price_pkr": 0, "market_range_pkr": {"min": 7000, "max": 12000}, "season": "kharif", "peak_price_months": [3, 4, 5]},
+    "rice_irri": {"name_en": "Rice (IRRI)", "name_ur": "چاول (IRRI)", "unit": "maund (40kg)", "support_price_pkr": 0, "market_range_pkr": {"min": 3500, "max": 5500}, "season": "kharif", "peak_price_months": [4, 5, 6]},
+    "cotton": {"name_en": "Cotton (Phutti)", "name_ur": "کپاس (پھٹی)", "unit": "maund (40kg)", "support_price_pkr": 8500, "market_range_pkr": {"min": 7000, "max": 12000}, "season": "kharif", "peak_price_months": [1, 2, 3]},
+    "sugarcane": {"name_en": "Sugarcane", "name_ur": "گنا", "unit": "maund (40kg)", "support_price_pkr": 425, "market_range_pkr": {"min": 350, "max": 500}, "season": "annual", "peak_price_months": [12, 1, 2]},
+    "maize": {"name_en": "Maize", "name_ur": "مکئی", "unit": "maund (40kg)", "support_price_pkr": 0, "market_range_pkr": {"min": 2500, "max": 4000}, "season": "kharif", "peak_price_months": [4, 5, 6]},
+    "gram": {"name_en": "Chickpea/Gram", "name_ur": "چنا", "unit": "maund (40kg)", "support_price_pkr": 0, "market_range_pkr": {"min": 8000, "max": 14000}, "season": "rabi", "peak_price_months": [10, 11, 12]},
+    "mustard": {"name_en": "Mustard", "name_ur": "سرسوں", "unit": "maund (40kg)", "support_price_pkr": 0, "market_range_pkr": {"min": 6000, "max": 10000}, "season": "rabi", "peak_price_months": [8, 9, 10]},
+    "potato": {"name_en": "Potato", "name_ur": "آلو", "unit": "maund (40kg)", "support_price_pkr": 0, "market_range_pkr": {"min": 1500, "max": 5000}, "season": "rabi", "peak_price_months": [7, 8, 9]},
+    "onion": {"name_en": "Onion", "name_ur": "پیاز", "unit": "maund (40kg)", "support_price_pkr": 0, "market_range_pkr": {"min": 2000, "max": 8000}, "season": "rabi", "peak_price_months": [9, 10, 11]},
+    "tomato": {"name_en": "Tomato", "name_ur": "ٹماٹر", "unit": "maund (40kg)", "support_price_pkr": 0, "market_range_pkr": {"min": 1500, "max": 6000}, "season": "rabi", "peak_price_months": [7, 8]},
+    "mango": {"name_en": "Mango", "name_ur": "آم", "unit": "maund (40kg)", "support_price_pkr": 0, "market_range_pkr": {"min": 3000, "max": 8000}, "season": "kharif", "peak_price_months": [6, 7]},
+    "lentil": {"name_en": "Lentil (Masoor)", "name_ur": "مسور", "unit": "maund (40kg)", "support_price_pkr": 0, "market_range_pkr": {"min": 8000, "max": 15000}, "season": "rabi", "peak_price_months": [10, 11]},
+    "mungbean": {"name_en": "Mung Bean", "name_ur": "مونگ", "unit": "maund (40kg)", "support_price_pkr": 0, "market_range_pkr": {"min": 10000, "max": 18000}, "season": "kharif", "peak_price_months": [1, 2, 3]},
+    "groundnut": {"name_en": "Groundnut", "name_ur": "مونگ پھلی", "unit": "maund (40kg)", "support_price_pkr": 0, "market_range_pkr": {"min": 6000, "max": 12000}, "season": "kharif", "peak_price_months": [3, 4, 5]}
+  },
+  "major_mandis": {
+    "punjab": [
+      {"name": "Lahore Grain Market", "name_ur": "لاہور اناج منڈی", "crops": ["wheat", "rice", "maize"], "district": "Lahore"},
+      {"name": "Faisalabad Grain Market", "name_ur": "فیصل آباد اناج منڈی", "crops": ["wheat", "cotton", "rice"], "district": "Faisalabad"},
+      {"name": "Multan Cotton Market", "name_ur": "ملتان کاٹن مارکیٹ", "crops": ["cotton", "mango"], "district": "Multan"},
+      {"name": "Okara Potato Market", "name_ur": "اوکاڑہ آلو مارکیٹ", "crops": ["potato", "wheat"], "district": "Okara"},
+      {"name": "Sargodha Citrus Market", "name_ur": "سرگودھا کینو مارکیٹ", "crops": ["citrus"], "district": "Sargodha"},
+      {"name": "Rahim Yar Khan Mango Market", "name_ur": "رحیم یار خان آم مارکیٹ", "crops": ["mango", "cotton"], "district": "Rahim Yar Khan"}
+    ],
+    "sindh": [
+      {"name": "Karachi Wholesale Market", "name_ur": "کراچی ہول سیل مارکیٹ", "crops": ["rice", "onion", "vegetables"], "district": "Karachi"},
+      {"name": "Hyderabad Grain Market", "name_ur": "حیدرآباد اناج منڈی", "crops": ["rice", "wheat", "onion"], "district": "Hyderabad"},
+      {"name": "Sukkur Rice Market", "name_ur": "سکھر چاول مارکیٹ", "crops": ["rice", "dates"], "district": "Sukkur"},
+      {"name": "Mirpurkhas Mango Market", "name_ur": "میرپور خاص آم مارکیٹ", "crops": ["mango", "cotton"], "district": "Mirpur Khas"}
+    ],
+    "kpk": [
+      {"name": "Peshawar Grain Market", "name_ur": "پشاور اناج منڈی", "crops": ["wheat", "maize", "sugarcane"], "district": "Peshawar"},
+      {"name": "Swat Fruit Market", "name_ur": "سوات پھل مارکیٹ", "crops": ["apple", "peach", "vegetables"], "district": "Swat"}
+    ],
+    "balochistan": [
+      {"name": "Quetta Fruit Market", "name_ur": "کوئٹہ پھل مارکیٹ", "crops": ["apple", "grape", "almond"], "district": "Quetta"},
+      {"name": "Turbat Date Market", "name_ur": "تربت کھجور مارکیٹ", "crops": ["dates"], "district": "Turbat"}
+    ]
+  },
+  "selling_tips": {
+    "en": [
+      "Store grain properly after harvest — don't sell immediately when prices are lowest",
+      "Government support price is the minimum — negotiate for higher market rate",
+      "Form farmer cooperatives for better bargaining power",
+      "Grade and clean your produce before selling for better prices",
+      "Check current mandi rates from Pakistan Agriculture Information Service (AMIS)"
+    ],
+    "ur": [
+      "کٹائی کے بعد اناج مناسب طریقے سے ذخیرہ کریں — فوراً نہ بیچیں جب قیمتیں سب سے کم ہوں",
+      "سرکاری سپورٹ پرائس کم از کم ہے — زیادہ مارکیٹ ریٹ کے لیے بات چیت کریں",
+      "بہتر سودے بازی کی طاقت کے لیے کسان تعاونیں بنائیں",
+      "بہتر قیمتوں کے لیے بیچنے سے پہلے اپنی پیداوار کی درجہ بندی اور صفائی کریں",
+      "پاکستان ایگریکلچر انفارمیشن سروس (AMIS) سے موجودہ منڈی ریٹ چیک کریں"
+    ]
+  },
+  "note": "Prices are approximate and vary by season, region, and market conditions. Always check current rates before making decisions."
+}

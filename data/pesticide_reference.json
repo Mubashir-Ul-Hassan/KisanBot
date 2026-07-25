@@ -1,0 +1,35 @@
+{
+  "_README": "CURATED SAFETY REFERENCE — NOT AN AUTHORITATIVE LIVE FEED. Pakistan's official registered/banned pesticide lists are published by the Department of Plant Protection (DPP) at https://plantprotection.gov.pk/services/pesticide-registration/ as PDF documents, and DPP is being reorganized (see spec Section 4.5). A human must verify and update this file against the current official list before relying on it. The Crop Protection agent uses 'banned' only to REFUSE suggestions; it does not claim anything is 'approved' on its own authority.",
+  "source_note": "Curated reference list — pending official DPP verification (last edited by developer).",
+  "last_verified": null,
+  "banned": [
+    "monocrotophos",
+    "methamidophos",
+    "methyl parathion",
+    "phorate",
+    "endosulfan",
+    "carbofuran",
+    "triazophos",
+    "aldrin",
+    "dieldrin",
+    "ddt",
+    "lindane",
+    "phosphamidon"
+  ],
+  "registered_examples": [
+    "imidacloprid",
+    "acetamiprid",
+    "spinosad",
+    "emamectin benzoate",
+    "chlorantraniliprole",
+    "thiamethoxam",
+    "lambda-cyhalothrin",
+    "mancozeb",
+    "copper oxychloride",
+    "carbendazim"
+  ],
+  "disclaimer": {
+    "en": "This is general guidance only. Confirm the exact product, dose, and safety precautions with your nearest agriculture extension office before spraying. Wear protection and follow the label.",
+    "ur": "یہ صرف عمومی رہنمائی ہے۔ اسپرے سے پہلے صحیح دوا، مقدار اور احتیاطی تدابیر اپنے قریبی زرعی توسیعی دفتر سے ضرور تصدیق کریں۔ حفاظتی لباس پہنیں اور ہدایات پر عمل کریں۔"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "recommendation_rules": {
+    "by_season_province": {
+      "rabi": {
+        "punjab": {
+          "primary": ["wheat", "mustard", "gram", "potato", "lentil"],
+          "secondary": ["barley", "onion", "tomato", "citrus"],
+          "notes_en": "Wheat is the dominant crop. Combine with mustard or gram for rotation benefits.",
+          "notes_ur": "گندم غالب فصل ہے۔ فصلی گردش کے فائدے کے لیے سرسوں یا چنے کے ساتھ ملائیں۔"
+        },
+        "sindh": {
+          "primary": ["wheat", "onion", "tomato"],
+          "secondary": ["mustard", "lentil"],
+          "notes_en": "Wheat follows rice in most areas. Vegetables are profitable alternatives.",
+          "notes_ur": "زیادہ تر علاقوں میں گندم چاول کے بعد آتی ہے۔ سبزیاں منافع بخش متبادل ہیں۔"
+        },
+        "kpk": {
+          "primary": ["wheat", "barley", "potato"],
+          "secondary": ["gram", "lentil", "tomato"],
+          "notes_en": "Wheat dominates plains, barley in hilly areas. Vegetables profitable in Hazara region.",
+          "notes_ur": "میدانوں میں گندم غالب ہے، پہاڑی علاقوں میں جو۔ ہزارہ خطے میں سبزیاں منافع بخش ہیں۔"
+        },
+        "balochistan": {
+          "primary": ["wheat", "barley", "onion"],
+          "secondary": ["potato", "gram"],
+          "notes_en": "Wheat/barley for food security. Onion is a major cash crop from highlands.",
+          "notes_ur": "غذائی تحفظ کے لیے گندم/جو۔ پیاز بلند علاقوں سے بڑی نقدی فصل ہے۔"
+        }
+      },
+      "kharif": {
+        "punjab": {
+          "primary": ["rice", "cotton", "maize", "sugarcane"],
+          "secondary": ["mungbean", "sorghum", "groundnut", "sesame", "millet"],
+          "notes_en": "Rice in upper Punjab (Gujranwala/Lahore), cotton in central/south (Multan/Faisalabad). Maize increasingly popular.",
+          "notes_ur": "اوپری پنجاب (گوجرانوالہ/لاہور) میں چاول، وسطی/جنوبی (ملتان/فیصل آباد) میں کپاس۔ مکئی تیزی سے مقبول۔"
+        },
+        "sindh": {
+          "primary": ["rice", "cotton", "sugarcane"],
+          "secondary": ["millet", "sorghum", "mungbean", "sesame"],
+          "notes_en": "Rice (IRRI varieties) in upper Sindh. Cotton in Mirpurkhas/Sanghar. Sugarcane in Hyderabad/Badin.",
+          "notes_ur": "اوپری سندھ میں چاول (IRRI اقسام)۔ میرپور خاص/سانگھڑ میں کپاس۔ حیدرآباد/بدین میں گنا۔"
+        },
+        "kpk": {
+          "primary": ["maize", "sugarcane", "rice"],
+          "secondary": ["mungbean", "sorghum"],
+          "notes_en": "Maize is the primary kharif crop. Sugarcane in Mardan/Peshawar. Rice in Swat valley.",
+          "notes_ur": "مکئی بنیادی خریف فصل ہے۔ مردان/پشاور میں گنا۔ وادی سوات میں چاول۔"
+        },
+        "balochistan": {
+          "primary": ["dates", "millet", "sorghum"],
+          "secondary": ["rice", "mungbean"],
+          "notes_en": "Dates in Makran/Turbat. Millet/sorghum in rainfed areas. Rice in Nasirabad.",
+          "notes_ur": "مکران/تربت میں کھجور۔ بارانی علاقوں میں باجرہ/جوار۔ نصیرآباد میں چاول۔"
+        }
+      },
+      "zaid": {
+        "punjab": {
+          "primary": ["sunflower", "maize", "mungbean"],
+          "secondary": ["vegetables"],
+          "notes_en": "Spring crops between rabi harvest and kharif sowing. Sunflower is most profitable.",
+          "notes_ur": "ربیع کی کٹائی اور خریف بوائی کے درمیان بہار کی فصلیں۔ سورج مکھی سب سے زیادہ منافع بخش۔"
+        },
+        "sindh": {
+          "primary": ["sunflower", "mungbean"],
+          "secondary": ["vegetables"],
+          "notes_en": "Short season crops to maximize land use.",
+          "notes_ur": "زمین کے زیادہ سے زیادہ استعمال کے لیے مختصر موسم کی فصلیں۔"
+        },
+        "kpk": {
+          "primary": ["maize", "vegetables"],
+          "secondary": ["mungbean"],
+          "notes_en": "Spring maize popular in plains. Vegetables in hilly areas.",
+          "notes_ur": "میدانوں میں بہار کی مکئی مقبول۔ پہاڑی علاقوں میں سبزیاں۔"
+        },
+        "balochistan": {
+          "primary": ["vegetables"],
+          "secondary": ["mungbean"],
+          "notes_en": "Limited spring crops due to water scarcity.",
+          "notes_ur": "پانی کی کمی کی وجہ سے محدود بہار کی فصلیں۔"
+        }
+      }
+    },
+    "by_water_availability": {
+      "canal": {
+        "suitable": ["rice", "sugarcane", "wheat", "cotton", "maize", "potato"],
+        "notes_en": "All major crops possible with canal irrigation",
+        "notes_ur": "نہری آبپاشی سے تمام بڑی فصلیں ممکن ہیں"
+      },
+      "tubewell": {
+        "suitable": ["wheat", "cotton", "maize", "sugarcane", "vegetables", "potato"],
+        "notes_en": "Consider water pumping costs. Avoid high water crops like rice unless cost-effective.",
+        "notes_ur": "پانی پمپنگ لاگت پر غور کریں۔ چاول جیسی زیادہ پانی والی فصلوں سے بچیں جب تک سستا نہ ہو۔"
+      },
+      "rainfed": {
+        "suitable": ["wheat", "gram", "barley", "millet", "sorghum", "groundnut", "lentil", "mustard"],
+        "notes_en": "Choose drought-tolerant crops. Mulching and conservation tillage recommended.",
+        "notes_ur": "خشک سالی مزاحم فصلیں چنیں۔ ملچنگ اور حفاظتی کاشت تجویز کی جاتی ہے۔"
+      },
+      "limited": {
+        "suitable": ["gram", "barley", "millet", "sorghum", "sesame", "mungbean", "dates"],
+        "notes_en": "Focus on drought-tolerant and short duration crops.",
+        "notes_ur": "خشک سالی مزاحم اور مختصر مدت کی فصلوں پر توجہ دیں۔"
+      }
+    },
+    "by_budget": {
+      "low": {
+        "suitable": ["wheat", "gram", "barley", "millet", "sorghum", "mungbean", "lentil", "mustard"],
+        "notes_en": "Low input crops requiring minimal seed and fertilizer investment. Suitable for small farmers.",
+        "notes_ur": "کم لاگت والی فصلیں جن میں کم بیج اور کھاد کی سرمایہ کاری درکار ہے۔ چھوٹے کسانوں کے لیے موزوں۔"
+      },
+      "medium": {
+        "suitable": ["wheat", "cotton", "maize", "rice", "sunflower", "onion", "groundnut"],
+        "notes_en": "Moderate investment with good return potential. Balance risk and reward.",
+        "notes_ur": "اچھے منافع کی صلاحیت کے ساتھ معتدل سرمایہ کاری۔ خطرے اور انعام میں توازن۔"
+      },
+      "high": {
+        "suitable": ["sugarcane", "potato", "tomato", "rice", "citrus", "mango"],
+        "notes_en": "High investment but potentially high returns. Need assured irrigation and market access.",
+        "notes_ur": "زیادہ سرمایہ کاری لیکن ممکنہ طور پر زیادہ منافع۔ یقینی آبپاشی اور منڈی تک رسائی ضروری۔"
+      }
+    }
+  },
+  "scoring_weights": {
+    "season_match": 30,
+    "region_match": 25,
+    "soil_match": 20,
+    "water_match": 15,
+    "budget_match": 10
+  }
+}

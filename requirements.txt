@@ -1,0 +1,10 @@
+# KisanBot backend — lightweight, tool-calling multi-agent system.
+# The old langgraph/crewai/pyautogen/beeai deps were removed: they were imported
+# but never actually used (the "multi-agent" was simulated). The spec (Section 8)
+# says a router using function/tool calling is sufficient for 5-6 agents and to
+# avoid a heavy framework — so we call the LLM + real data services directly.
+fastapi>=0.100.0
+uvicorn>=0.22.0
+pydantic>=2.0
+requests>=2.31.0
+python-dotenv>=1.0.0

@@ -1,0 +1,191 @@
+{
+  "soil_types": {
+    "alluvial": {
+      "name_en": "Alluvial Soil",
+      "name_ur": "ندیائی مٹی",
+      "description_en": "Deposited by rivers, very fertile. Found along Indus and its tributaries.",
+      "description_ur": "دریاؤں کے ذریعے جمع ہونے والی، بہت زرخیز مٹی۔ دریائے سندھ اور اس کی معاون ندیوں کے ساتھ پائی جاتی ہے۔",
+      "ph_range": {"min": 7.0, "max": 8.5},
+      "fertility": "high",
+      "drainage": "moderate",
+      "suitable_crops": ["wheat", "rice", "cotton", "sugarcane", "maize", "vegetables"],
+      "regions": ["punjab", "sindh"]
+    },
+    "alluvial_loam": {
+      "name_en": "Alluvial Loam",
+      "name_ur": "ندیائی لوم",
+      "description_en": "Well-balanced soil with good mix of sand, silt, and clay. Best for most crops.",
+      "description_ur": "ریت، گاد اور مٹی کا اچھا مرکب۔ زیادہ تر فصلوں کے لیے بہترین۔",
+      "ph_range": {"min": 6.5, "max": 8.0},
+      "fertility": "high",
+      "drainage": "good",
+      "suitable_crops": ["wheat", "rice", "cotton", "sugarcane", "maize", "vegetables", "citrus", "mustard"],
+      "regions": ["punjab", "kpk"]
+    },
+    "alluvial_clay": {
+      "name_en": "Alluvial Clay",
+      "name_ur": "ندیائی چکنی مٹی",
+      "description_en": "Heavy clay soil, retains water well. Good for rice but needs drainage management.",
+      "description_ur": "بھاری چکنی مٹی، پانی اچھی طرح روکتی ہے۔ چاول کے لیے اچھی لیکن نکاسی کا انتظام ضروری۔",
+      "ph_range": {"min": 7.0, "max": 8.5},
+      "fertility": "medium_high",
+      "drainage": "poor",
+      "suitable_crops": ["rice", "sugarcane", "wheat", "sunflower"],
+      "regions": ["sindh", "punjab"]
+    },
+    "alluvial_clay_loam": {
+      "name_en": "Alluvial Clay Loam",
+      "name_ur": "ندیائی چکنی لوم",
+      "description_en": "Mix of clay and loam. Good water retention and moderate drainage.",
+      "description_ur": "چکنی مٹی اور لوم کا مرکب۔ پانی اچھی طرح روکتی ہے اور معتدل نکاسی۔",
+      "ph_range": {"min": 6.8, "max": 8.2},
+      "fertility": "high",
+      "drainage": "moderate",
+      "suitable_crops": ["wheat", "rice", "maize", "sugarcane", "cotton"],
+      "regions": ["punjab", "kpk"]
+    },
+    "alluvial_sandy_loam": {
+      "name_en": "Alluvial Sandy Loam",
+      "name_ur": "ندیائی ریتلی لوم",
+      "description_en": "Light textured soil with good drainage. Needs frequent irrigation.",
+      "description_ur": "ہلکی ساخت والی مٹی جس کی نکاسی اچھی ہے۔ بار بار آبپاشی کی ضرورت۔",
+      "ph_range": {"min": 7.0, "max": 8.5},
+      "fertility": "medium",
+      "drainage": "good",
+      "suitable_crops": ["cotton", "wheat", "gram", "mustard", "groundnut", "sesame"],
+      "regions": ["punjab"]
+    },
+    "alluvial_sandy": {
+      "name_en": "Alluvial Sandy",
+      "name_ur": "ندیائی ریتلی",
+      "description_en": "Sandy soil near desert margins. Low fertility, needs organic matter.",
+      "description_ur": "صحرائی کناروں کے قریب ریتلی مٹی۔ کم زرخیز، نامیاتی مادے کی ضرورت۔",
+      "ph_range": {"min": 7.5, "max": 9.0},
+      "fertility": "low",
+      "drainage": "excessive",
+      "suitable_crops": ["millet", "sorghum", "mungbean", "sesame", "dates"],
+      "regions": ["punjab", "sindh"]
+    },
+    "alluvial_silt": {
+      "name_en": "Alluvial Silt",
+      "name_ur": "ندیائی گاد",
+      "description_en": "Fine silty soil deposited by floods. Very fertile but prone to compaction.",
+      "description_ur": "سیلاب سے جمع ہونے والی باریک گاد والی مٹی۔ بہت زرخیز لیکن سکڑنے کا رجحان۔",
+      "ph_range": {"min": 7.0, "max": 8.3},
+      "fertility": "high",
+      "drainage": "moderate",
+      "suitable_crops": ["rice", "wheat", "dates", "onion", "vegetables"],
+      "regions": ["sindh", "balochistan"]
+    },
+    "sandy_loam": {
+      "name_en": "Sandy Loam",
+      "name_ur": "ریتلی لوم",
+      "description_en": "Light soil good for root crops and drought-tolerant varieties.",
+      "description_ur": "ہلکی مٹی جو جڑوں والی فصلوں اور خشک سالی مزاحم اقسام کے لیے مفید۔",
+      "ph_range": {"min": 7.0, "max": 8.5},
+      "fertility": "medium_low",
+      "drainage": "good",
+      "suitable_crops": ["cotton", "millet", "groundnut", "sesame", "mungbean", "dates"],
+      "regions": ["punjab", "sindh"]
+    },
+    "sandy_coastal": {
+      "name_en": "Sandy Coastal",
+      "name_ur": "ریتلی ساحلی",
+      "description_en": "Coastal sandy soil with salinity issues. Limited agriculture potential.",
+      "description_ur": "نمکیات کے مسائل والی ساحلی ریتلی مٹی۔ محدود زرعی صلاحیت۔",
+      "ph_range": {"min": 7.5, "max": 9.5},
+      "fertility": "low",
+      "drainage": "excessive",
+      "suitable_crops": ["dates", "vegetables"],
+      "regions": ["sindh", "balochistan"]
+    },
+    "loess_clay": {
+      "name_en": "Loess Clay (Pothwar)",
+      "name_ur": "لویس چکنی (پوٹھوار)",
+      "description_en": "Wind-deposited clay soil found in Pothwar plateau. Good for rainfed crops.",
+      "description_ur": "پوٹھوار سطح مرتفع میں پائی جانے والی ہوا سے جمع شدہ چکنی مٹی۔ بارانی فصلوں کے لیے مفید۔",
+      "ph_range": {"min": 7.0, "max": 8.5},
+      "fertility": "medium",
+      "drainage": "moderate",
+      "suitable_crops": ["wheat", "gram", "groundnut", "lentil", "barley"],
+      "regions": ["punjab"]
+    },
+    "mountain_loam": {
+      "name_en": "Mountain Loam",
+      "name_ur": "پہاڑی لوم",
+      "description_en": "Hill soil with good organic content. Found in hilly regions of KP.",
+      "description_ur": "اچھے نامیاتی مادے والی پہاڑی مٹی۔ خیبر پختونخوا کے پہاڑی علاقوں میں پائی جاتی ہے۔",
+      "ph_range": {"min": 5.5, "max": 7.5},
+      "fertility": "medium_high",
+      "drainage": "good",
+      "suitable_crops": ["maize", "wheat", "potato", "vegetables", "apple"],
+      "regions": ["kpk"]
+    },
+    "mountain_clay_loam": {
+      "name_en": "Mountain Clay Loam",
+      "name_ur": "پہاڑی چکنی لوم",
+      "description_en": "Heavier mountain soil. Good for terraced farming.",
+      "description_ur": "بھاری پہاڑی مٹی۔ سیڑھی نما کاشت کے لیے مفید۔",
+      "ph_range": {"min": 5.5, "max": 7.5},
+      "fertility": "medium",
+      "drainage": "moderate",
+      "suitable_crops": ["rice", "maize", "wheat", "apple", "peach"],
+      "regions": ["kpk"]
+    },
+    "mountain_sandy_loam": {
+      "name_en": "Mountain Sandy Loam",
+      "name_ur": "پہاڑی ریتلی لوم",
+      "description_en": "Light mountain soil found in Quetta and highland Balochistan.",
+      "description_ur": "کوئٹہ اور بلند بلوچستان میں پائی جانے والی ہلکی پہاڑی مٹی۔",
+      "ph_range": {"min": 7.0, "max": 8.5},
+      "fertility": "low_medium",
+      "drainage": "good",
+      "suitable_crops": ["wheat", "barley", "apple", "grape", "almond", "gram"],
+      "regions": ["balochistan"]
+    },
+    "mountain_rocky_loam": {
+      "name_en": "Mountain Rocky Loam",
+      "name_ur": "پہاڑی پتھریلی لوم",
+      "description_en": "Rocky soil with limited depth. Suitable for hardy crops and orchards.",
+      "description_ur": "محدود گہرائی والی پتھریلی مٹی۔ سخت جان فصلوں اور باغات کے لیے موزوں۔",
+      "ph_range": {"min": 7.0, "max": 8.5},
+      "fertility": "low",
+      "drainage": "excessive",
+      "suitable_crops": ["wheat", "barley", "onion"],
+      "regions": ["balochistan"]
+    },
+    "mountain_sandy": {
+      "name_en": "Mountain Sandy",
+      "name_ur": "پہاڑی ریتلی",
+      "description_en": "Sandy mountain soil in Zhob and northern Balochistan.",
+      "description_ur": "ژوب اور شمالی بلوچستان میں ریتلی پہاڑی مٹی۔",
+      "ph_range": {"min": 7.0, "max": 8.5},
+      "fertility": "low",
+      "drainage": "excessive",
+      "suitable_crops": ["wheat", "almond", "apple"],
+      "regions": ["balochistan"]
+    }
+  },
+  "soil_improvement": {
+    "low_fertility": {
+      "advice_en": "Add farmyard manure (FYM) at 4-5 tons per acre. Use green manuring with legume crops. Apply balanced NPK fertilizers.",
+      "advice_ur": "فارم یارڈ کھاد (FYM) 4-5 ٹن فی ایکڑ ڈالیں۔ دال کی فصلوں کے ساتھ سبز کھاد استعمال کریں۔ متوازن NPK کھاد لگائیں۔"
+    },
+    "poor_drainage": {
+      "advice_en": "Install tile drains or raised beds. Add gypsum for sodic soils. Grow rice in waterlogged areas.",
+      "advice_ur": "ٹائل ڈرینز یا اونچی کیاریاں لگائیں۔ سوڈک مٹی کے لیے جپسم ڈالیں۔ پانی بھرے علاقوں میں چاول اگائیں۔"
+    },
+    "salinity": {
+      "advice_en": "Apply gypsum at 2-4 bags per acre. Leach salts with heavy irrigation. Grow salt-tolerant varieties (barley, berseem).",
+      "advice_ur": "جپسم 2-4 بوری فی ایکڑ لگائیں۔ بھاری آبپاشی سے نمکیات دھوئیں۔ نمک مزاحم اقسام (جو، برسیم) اگائیں۔"
+    },
+    "excessive_drainage": {
+      "advice_en": "Add organic matter to improve water retention. Use mulching. Drip irrigation recommended.",
+      "advice_ur": "پانی روکنے کی صلاحیت بہتر کرنے کے لیے نامیاتی مادہ ڈالیں۔ ملچنگ استعمال کریں۔ ڈرپ آبپاشی تجویز کی جاتی ہے۔"
+    }
+  },
+  "identification_guide": {
+    "how_to_identify_en": "To identify your soil type: 1) Take a handful of moist soil. 2) If it feels gritty and doesn't hold shape = Sandy. 3) If it's smooth and holds shape briefly = Loam. 4) If it's sticky, shiny, and holds shape firmly = Clay. 5) If it crumbles easily with some stickiness = Sandy Loam.",
+    "how_to_identify_ur": "اپنی مٹی کی قسم جاننے کے لیے: 1) نم مٹی مٹھی میں لیں۔ 2) اگر دانے دار محسوس ہو اور شکل نہ بنے = ریتلی۔ 3) اگر ملائم ہو اور تھوڑی دیر شکل بنائے = لوم۔ 4) اگر چپچپی، چمکدار ہو اور مضبوطی سے شکل بنائے = چکنی۔ 5) اگر آسانی سے ٹوٹے اور تھوڑی چپچپاہٹ ہو = ریتلی لوم۔"
+  }
+}

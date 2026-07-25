@@ -1,0 +1,10 @@
+{
+  "_README": "Edit/verify these before shipping. The spec (Section 7) requires an always-visible way to reach a real human. Replace the phone number with the one appropriate for your users' province, and verify it is current. Left as a widely-published example; DEVELOPER MUST CONFIRM.",
+  "label_ur": "اگر کوئی بات واضح نہ ہو تو کسی حقیقی ماہر سے بات کریں:",
+  "label_en": "If anything is unclear, talk to a real expert:",
+  "phone": "0800-29000",
+  "phone_note_ur": "پنجاب زرعی ہیلپ لائن (نمونہ نمبر — اپنے علاقے کے مطابق تبدیل کریں)",
+  "phone_note_en": "Punjab Agriculture Helpline (example — replace for your region)",
+  "office_ur": "یا اپنے قریبی زرعی توسیعی دفتر سے رابطہ کریں۔",
+  "office_en": "Or contact your nearest agriculture extension office."
+}
