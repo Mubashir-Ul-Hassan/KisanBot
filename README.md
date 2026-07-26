@@ -459,7 +459,7 @@ KisanBot/
 <a id="license"></a>
 ## 📜 License
 
-This project was built as a final project submission for an AI application development course. It is original work solving a real problem for Pakistani farming communities.
+This project was built as a final project submission for an ACT AI (Awareness, Competency & Tools Training for Artificial Intelligence) course. It is original work solving a real problem for Pakistani farming communities.
 
 *No open-source license has been declared yet — consider adding one (MIT, Apache-2.0, etc.) if you'd like others to reuse or build on this code.*
 
